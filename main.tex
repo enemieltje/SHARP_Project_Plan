@@ -1,0 +1,28 @@
+\documentclass[10pt,a4paper]{article}
+\input{preamble.tex}
+
+% Define the Title Page
+\title{\textbf{Engineering for Space 1} \\ \vspace{1cm} \textbf{Phase A study for InhollandSat-2}}
+\author{}
+\date{}
+
+\begin{document}
+% Import sections from the sections folder
+\include{sections/titlepage.tex}
+\input{sections/change_record.tex}
+\input{sections/applicable_documents.tex}
+\input{sections/reference_documents.tex}
+
+
+% Table of Contents:
+\newpage
+{\large \tableofcontents}
+
+\includesection{sections/executive_summary.tex}
+\includesection{sections/abbreviations_list.tex}
+\includesection{sections/introduction.tex}
+\includesection{sections/mission_elements.tex}
+\includesection{sections/conclusions.tex}
+\includesection{sections/recommendations.tex}
+\includesection{sections/appendix_a.tex}
+\end{document}
