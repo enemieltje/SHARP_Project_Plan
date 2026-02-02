@@ -2,27 +2,24 @@
 \input{preamble.tex}
 
 % Define the Title Page
-\title{\textbf{Engineering for Space 1} \\ \vspace{1cm} \textbf{Phase A study for InhollandSat-2}}
-\author{}
-\date{}
+\title{\textbf{Project SHARP- Power Generation and Delivery System} \\ \vspace{1cm}
+\textbf{Project Plan}}
+\author{Emil Boot}
+\date{\today}
 
 \begin{document}
 % Import sections from the sections folder
-\include{sections/titlepage.tex}
+\input{sections/titlepage.tex}
 \input{sections/change_record.tex}
-\input{sections/applicable_documents.tex}
-\input{sections/reference_documents.tex}
 
 
 % Table of Contents:
 \newpage
 {\large \tableofcontents}
+\newpage
 
-\includesection{sections/executive_summary.tex}
-\includesection{sections/abbreviations_list.tex}
-\includesection{sections/introduction.tex}
-\includesection{sections/mission_elements.tex}
-\includesection{sections/conclusions.tex}
-\includesection{sections/recommendations.tex}
-\includesection{sections/appendix_a.tex}
+\input{sections/introduction.tex}
+\input{sections/conclusion.tex}
+% \input{sections/recommendations.tex}
+% \input{sections/appendix_a.tex}
 \end{document}

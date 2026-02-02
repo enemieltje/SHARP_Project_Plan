@@ -10,7 +10,7 @@
 % Page layout
 \usepackage{geometry}
 \geometry{
-  top=6cm,       % space for table header
+  top=5cm,       % space for table header
   bottom=2.5cm,
   left=2.5cm,
   right=2.5cm,
@@ -28,7 +28,7 @@
 % Tables
 \usepackage{tabularx,booktabs,array,longtable,calc}
 \usepackage{footnote}
-\makesavenoteenv{longtable}
+% \makesavenoteenv{longtable}
 
 % Graphics
 \usepackage{graphicx}
@@ -93,23 +93,33 @@
 % Define header
 \fancyhead[L]{%
   \renewcommand{\arraystretch}{1.4}
-  \begin{tabularx}{\textwidth}{|p{6cm}|X|p{5cm}|}
-    \hline
-        % \begin{figure}[h]
-        \vspace{0mm}
-        \includegraphics[width=6cm]{media/inholland_logo.png}
-        % \end{figure}
-    & \vspace{3mm} \centering \textbf{\large{Inholland Space Lab}} &
-    Document \#: ISL-<X>-RP-<Y> \newline
+  \begin{tabularx}{\textwidth}{p{3cm}Xp{4cm}}
+    % \hline
+    % \begin{figure}[h]
+    \vspace{0mm}
+    \includegraphics[width=3cm]{media/stellar_space_logo.png}
+    % \end{figure}
+    &
+    \vspace{0mm}
+    \includegraphics[width=5.5cm]{media/inholland_logo.png}
+    &
+    \vspace{0mm}
+    Document: Project Plan \newline
     Issue: 1.0 \newline
-    Date: \todayISO\newline
+    Date: \today\newline
     Page: \thepage~of~\pageref{LastPage} \\
-    \hline
-    Security class: TBD &
-    Model: TBD &
-    Work package: N/A \newline
-    Configuration ID: N/A \newline
-    Template issue: 1.2 \\
-    \hline
+    % \hline
+    % Security class: TBD &
+    % Model: TBD &
+    % Work package: N/A \newline
+    % Configuration ID: N/A \newline
+    % Template issue: 1.2 \\
+    % \hline
   \end{tabularx}%
+}
+
+\fancypagestyle{noheader}{
+  \fancyhf{}              % clear all header/footer
+  \renewcommand{\headrulewidth}{0pt} % remove header line
+  % \fancyfoot[L]{\thepage} % keep centered page number
 }
