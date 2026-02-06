@@ -30,6 +30,11 @@
 \usepackage{footnote}
 % \makesavenoteenv{longtable}
 
+% Lists
+\renewcommand{\labelenumii}{\arabic{enumi}.\arabic{enumii}}
+\renewcommand{\labelenumiii}{\arabic{enumi}.\arabic{enumii}.\arabic{enumiii}}
+\renewcommand{\labelenumiv}{\arabic{enumi}.\arabic{enumii}.\arabic{enumiii}.\arabic{enumiv}}
+
 % Graphics
 \usepackage{graphicx}
 \makeatletter
@@ -106,7 +111,7 @@
      &
     \vspace{0mm}
     Document: Project Plan \newline
-    Issue: 2.0 \newline
+    Issue: 2.1 \newline
     Date: \today\newline
     Page: \thepage~of~\pageref{LastPage} \\
   \end{tabularx}%
