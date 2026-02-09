@@ -1,0 +1,189 @@
+\DTLnewdb{workpackages}
+
+\newcommand{\WPadd}[5]{
+    \DTLnewrow{workpackages}
+    \DTLnewdbentry{workpackages}{id}{WP-#1}
+    \DTLnewdbentry{workpackages}{label}{#2}
+    \DTLnewdbentry{workpackages}{long}{#3}
+    \DTLnewdbentry{workpackages}{activities}{#4}
+    \DTLnewdbentry{workpackages}{deliverables}{#5}
+}
+
+\newcommand{\WP}[2]{%
+    \DTLfetch{workpackages}{id}{#1}{#2}%
+}
+
+\newcommand{\WPtable}[1]{
+
+    \begin{tabularx}{\textwidth}{|X|}
+        \hline
+        \textbf{#1}: \textbf{\WP{#1}{label}} \\
+        \hline
+        \WP{#1}{long}                        \\
+        \hline
+        Included Activities:
+        \begin{enumerate}
+            \WP{#1}{activities}
+        \end{enumerate}                   \\
+        \hline
+        Deliverables:
+        \begin{enumerate}
+            \WP{#1}{deliverables}
+        \end{enumerate}                 \\
+        \hline
+    \end{tabularx}
+}
+
+\newcommand{\Workpackages}{
+    \DTLforeach{workpackages}{
+        \id=id%
+    }{
+        \WPtable{\id}
+        \vspace{0.5cm}
+    }
+}
+
+\newcommand{\WPlist}[1]{
+    \begin{enumerate}
+        \DTLforeach{workpackages}{
+        \id=id%
+        }{
+        \item \WP{\id}{label}
+              \begin{enumerate}
+                  \WP{\id}{#1}
+              \end{enumerate}
+              }
+    \end{enumerate}
+}
+
+
+\WPadd{1}{Project Definition and Requirements}
+{Define the problem, scope, and requirements for the hydrogen-based power system test bench.}
+{
+    \item Literature study on hydrogen storage, fuel cells, and UAV power systems
+    \item Analysis of mission scenario and system constraints
+    \item Definition of functional, performance, and safety requirements
+    \item Writing and finalising the project plan
+}
+{
+    \item Literature review summary
+    \item System requirements specification
+    \item Approved project plan
+}
+
+\WPadd{2}{Conceptual Design of Test Bench}
+{Develop and select a suitable concept for the hydrogen-based power system test bench.}
+{
+    \item Development of multiple conceptual test bench architectures
+    \item Definition of system boundaries and interfaces
+    \item Trade-off analysis of concepts based on requirements
+    \item Selection of the preferred test bench concept
+}
+{
+    \item Overview of conceptual design alternatives
+    \item Trade-off analysis and decision matrix
+    \item Selected test bench concept
+}
+
+\WPadd{3}{Detailed Design of Test Bench}
+{Translate the selected test bench concept into a detailed and buildable design.}
+{
+    \item Detailed mechanical design of the test bench
+    \item Electrical system design and schematic development
+    \item Component selection for fuel cell, storage, and power electronics
+    \item Verification of the design against system requirements
+}
+{
+    \item CAD models and mechanical drawings
+    \item Electrical schematics
+    \item Bill of materials (BOM)
+}
+
+\WPadd{4}{Procurement and Preparation}
+{Ensure availability and readiness of all components required for the test bench.}
+{
+    \item Selection of suppliers and components
+    \item Ordering and procurement of parts
+    \item Incoming inspection and preparation of components
+}
+{
+    \item Procured and inspected components
+    \item Updated bill of materials and cost overview
+}
+
+\WPadd{5}{Manufacturing, Assembly, and Integration}
+{Build and integrate the hydrogen-based power system test bench.}
+{
+    \item Manufacturing of mechanical parts where required
+    \item Assembly of mechanical and electrical subsystems
+    \item Integration of FCU, CGG, fuel cell, electronics and fluidics
+}
+{
+    \item Fully assembled and integrated test bench
+    \item Integration and assembly documentation
+}
+
+\WPadd{6}{Test Planning}
+{Define procedures and criteria for verifying system performance and safety.}
+{
+    \item Definition of test objectives and success criteria
+    \item Development of test procedures and protocols
+    \item Safety and risk assessment for test execution
+}
+{
+    \item Test plan
+    \item Safety and risk assessment documentation
+}
+
+\WPadd{7}{Testing and Data Collection}
+{Evaluate the performance of the test bench under controlled conditions.}
+{
+    \item Execution of planned ground tests
+    \item Measurement of power output, efficiency and stability
+    \item Data logging and test documentation
+}
+{
+    \item Raw test data
+    \item Test logs and measurement records
+}
+
+\WPadd{8}{Data Analysis and Feasibility Assessment}
+{Assess the technical feasibility of the power system based on test results.}
+{
+    \item Analysis of measured test data
+    \item Comparison of results with requirements and theoretical expectations
+    \item Identification of system limitations and technical risks
+}
+{
+    \item Performance analysis results
+    \item Feasibility assessment and conclusions
+}
+
+\WPadd{9}{Documentation and Reporting}
+{Document the project process, results, and conclusions in a professional manner.}
+{
+    \item Writing of the research and project report
+    \item Preparation of presentations and supporting materials
+    \item Final review and submission of all deliverables
+}
+{
+    \item Final project report
+    \item Presentation materials
+}
+
+% \WPadd{10}{Optional: Drone Prototype Exploration}
+% {Explore the applicability of the developed power system to a drone platform, if time allows.}
+% {
+%     \begin{itemize}
+%         \item Conceptual design of drone integration
+%         \item Preliminary trade-off and feasibility analysis
+%         \item Documentation of findings and limitations
+%     \end{itemize}
+% }
+% {
+%     \begin{itemize}
+%         \item Conceptual drone integration study
+%         \item Design sketches and feasibility notes
+%     \end{itemize}
+% }
+

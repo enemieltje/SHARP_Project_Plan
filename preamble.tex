@@ -21,6 +21,7 @@
 % Headers and footers
 \usepackage{fancyhdr}
 \usepackage{lastpage}
+\usepackage{appendix}
 \pagestyle{fancy}
 \fancyhf{}
 \rfoot{\thepage}
@@ -28,7 +29,8 @@
 % Tables
 \usepackage{tabularx,booktabs,array,longtable,calc}
 \usepackage{footnote}
-% \makesavenoteenv{longtable}
+\usepackage{datatool}
+\renewcommand{\arraystretch}{1.5}
 
 % Lists
 \renewcommand{\labelenumii}{\arabic{enumi}.\arabic{enumii}}
@@ -111,7 +113,7 @@
      &
     \vspace{0mm}
     Document: Project Plan \newline
-    Issue: 2.1 \newline
+    Issue: 2.2 \newline
     Date: \today\newline
     Page: \thepage~of~\pageref{LastPage} \\
   \end{tabularx}%
