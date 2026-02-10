@@ -30,6 +30,7 @@
 \usepackage{tabularx,booktabs,array,longtable,calc}
 \usepackage{footnote}
 \usepackage{datatool}
+\usepackage{makecell}
 \renewcommand{\arraystretch}{1.5}
 
 % Lists
@@ -68,6 +69,9 @@
 \usepackage{iftex}
 \usepackage{subfiles}
 \usepackage[normalem]{ulem} % strikethrough support
+\usepackage{ifthen}
+\usepackage{datetime}
+\ddmmyyyydate
 
 % Optional enhancements
 \IfFileExists{microtype.sty}{\usepackage{microtype}}{}
@@ -113,7 +117,7 @@
      &
     \vspace{0mm}
     Document: Project Plan \newline
-    Issue: 2.2 \newline
+    Issue: 2.3 \newline
     Date: \today\newline
     Page: \thepage~of~\pageref{LastPage} \\
   \end{tabularx}%

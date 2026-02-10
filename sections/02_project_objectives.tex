@@ -80,14 +80,15 @@ The relevant environment for the SHARP-PS project will be a fuel cell that deliv
 % \textbf{Main Research Question}\\
 % To what extent is a hydrogen fuel cell based power generation and feed system that integrates a Solid Flow's cool gas generator and Stellar Space Industries' flow control system feasible for extending the flight time of a COTS drone without reducing payload capacity?
 
-The afformentioned research question will be subdivided into the following sub research questions:
+The aforementioned research question will be subdivided into the following sub research questions:
 
 % \textbf{Sub Research Questions}\\
 \begin{enumerate}
     \DTLforeach{researchquestions}{
-    \req=long%
+    \id=id%
     }{
-    \item{\req}
+    \renewcommand{\labelenumi}{\id}
+    \item{\RQ{\id}{long}}
           }
 \end{enumerate}
 
