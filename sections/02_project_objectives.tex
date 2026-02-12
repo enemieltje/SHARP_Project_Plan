@@ -1,26 +1,20 @@
 \section{Project Results}
-% Why the project is to be carried out
-% What the project is to achieve
-% Main and sub research questions
-
-% Results may include some high level requirements, values do not need to be filled in yet
-% "Power system must provide at least X Watts of power" is fine
-% no need to define X yet, but is nice if possible
-
-% Should be as 'SMART' as possible
-
-% \textit{
-%     This chapter should contain a description of the project goals and results.
-%     It should describe what the project is to achieve and why the project is to be carried out.
-%     The main and sub research questions should also be given here.
-%     May include some high level requirements, doesnt have to be complete yet.
-%     \\Everything should be as 'SMART' as possible.
-% }
-
 For Stellar Space Industries, the primary goal for SHARP is to test and apply their FCU in a real world scenario and thus advance the FCU's technology readiness level (TRL) from 4 to 6. In addition to this, they aim to find a secondary market for their FCU in hydrogen based aviation compared to electric propulsion for satellites. Solid Flow has the same goals for their hydrogen CGG.
 The goal of SHARP-PS is to integrate the FCU and CGG and demonstrate the technologies and their compatibility in a relevant environment.
 
-The relevant environment for the SHARP-PS project will be a fuel cell that delivers power to a motor and propeller system. Results of tests performed in this environment will be directly applicable to hydrogen based aviation projects. The result of the SHARP-PS project will be a test bench setup that includes this fuel cell and motor-propeller system and the integrated FCU and CGG hydrogen supply. This test bench setup shall be easily adaptable to be integrated into an unmanned areal vehicle (UAV). The project result of SHARP-PS shall meet the following requirements:
+The relevant evnironment for the SHARP-PS project will be a hydrogen fuel cell that delivers power to an unmanned areal vehicle (UAV). The results of the SHARP-PS project will be the following:
+
+\begin{itemize}
+    \item The design for a power generation and feed system that is integrated into a UAV.
+    \item A test bench setup that validates the performance of this power generation and feed system.
+    \item A research report that documents the design process and test results and assesses the feasibility of using this power system in UAV's.
+\end{itemize}
+
+If allowed by time, a UAV with the integrated power generation and feed system may be an additional result of the SHARP-PS project. This will be described in more detail in section 4 Scope.
+
+% The relevant environment for the SHARP-PS project will be a fuel cell that delivers power to a motor and propeller system. Results of tests performed in this environment will be directly applicable to hydrogen based aviation projects. The result of the SHARP-PS project will be a test bench setup that includes this fuel cell and motor-propeller system and the integrated FCU and CGG hydrogen supply. This test bench setup shall be easily adaptable to be integrated into an unmanned areal vehicle (UAV). The project result of SHARP-PS shall meet the following requirements:
+
+Requirements for the UAV are not described in this document. These are dependent on the mission scenario for the UAV which, as of the writing of this document, has not yet been determined. This mission scenario will be determined by Stellar Space Industries as soon as possible, after which the requirements for the UAV will be constructed. Requirements for the other results of the SHARP-PS project are as follows:
 
 \begin{itemize}
     \item Stellar Space Industries' FCU shall be included in the system.
@@ -29,56 +23,9 @@ The relevant environment for the SHARP-PS project will be a fuel cell that deliv
     \item The system shall function without external power supply.
     \item The power density (power output over system weight) of the system must be the same or higher than that of state-off-the-art UAV power systems.
     \item Test results will be recorded and presented in a research report that is in accordance with `Report writing for readers with little time'~\cite{EllingAndeweg2012}
-    \item The research report shall answer the following research question: `To what extent is a hydrogen fuel cell based power generation and delivery system that integrates a Solid Flow's cool gas generator and Stellar Space Industries' flow control unit feasible for extending the mission time for UAV's'
+    \item The research report shall answer the following research question: `To what extent is a hydrogen fuel cell based power generation and feed system that integrates a Solid Flow's cool gas generator and Stellar Space Industries' flow control unit feasible for extending the mission time for UAV's'
 \end{itemize}
-
 \newpage
-% \subsection*{Goals}
-% \begin{itemize}
-%     % \item Create a relevant environment to test the FCU and CGG in.
-%     \item Demonstrate the FCU in a relevant environment
-%     \item Demonstrate the CGG in a relevant environment
-%     \item Combine the FCU and CGG into an integrated power generation and delivery system
-%           % \item Produce flight hours of the valve in a meaningful way
-%           % \item Same goes for solid flow
-%           % \item Help with energy transition in aviation
-%           % \item Produce research on hydrogen based electric flight
-%           % \item Use this research to produce a sellable product or sell research results directly
-% \end{itemize}
-
-
-
-% \subsection*{Results}
-% \begin{itemize}
-%     \item Test bench setup
-%           \begin{itemize}
-%               \item Hydrogen storage system (solid flow if available)
-%               \item Hydrogen delivery system using SSI valve
-%               \item Fuel cell system
-%               \item Electric load, preferably as motor and propeller system
-%               \item Integrated control system
-%           \end{itemize}
-%     \item Research report
-%           \begin{itemize}
-%               \item Will answer main and sub research questions
-%               \item "To what extent is a hydrogen fuel cell based power generation and feed system that integrates a Solid Flow's cool gas generator and Stellar Space Industries' flow control system feasible for extending the flight time of a COTS drone without reducing payload capacity?"
-%               \item Must be in accordance with "Report writing for readers with little time"~\cite{EllingAndeweg2012}
-%           \end{itemize}
-%     \item Drone Design
-%           \begin{itemize}
-%               \item Energy system from test bench
-%               \item Either COTS drone or custom built drone
-%               \item Integration of energy system into drone
-%           \end{itemize}
-%     \item Drone Prototype
-%           \begin{itemize}
-%               \item Prototype manufacturing
-%               \item Flight testing of drone
-%           \end{itemize}
-% \end{itemize}
-
-% \textbf{Main Research Question}\\
-% To what extent is a hydrogen fuel cell based power generation and feed system that integrates a Solid Flow's cool gas generator and Stellar Space Industries' flow control system feasible for extending the flight time of a COTS drone without reducing payload capacity?
 
 The aforementioned research question will be subdivided into the following sub research questions:
 
@@ -97,61 +44,3 @@ These research questions have been arranged into a research matrix where they ha
 \newpage
 
 
-
-
-% \begin{table}[htp]
-%     \centering
-%     \begin{tabularx}{\textwidth}{>{\hsize=2\hsize\linewidth=\hsize}X >{\hsize=.66\hsize\linewidth=\hsize}X >{\hsize=.67\hsize\linewidth=\hsize}X >{\hsize=.66\hsize\linewidth=\hsize}X}
-%         \toprule
-%         \textbf{Research Question} & \textbf{Research Method}                                                 & \textbf{Instruments / Tools} & \textbf{Output / Data} \\
-%         \midrule
-%         1. What functional, performance, and safety requirements must the power generation and feed system meet to be integrated into the selected COTS drone?
-%                                    & Literature review and stakeholder analysis
-%                                    & Scientific literature, hydrogen and UAV standards, requirement templates
-%                                    & System requirements specification                                                                                                \\
-
-%         2. What are the relevant performance characteristics of Solid Flow’s cool gas generator and Stellar Space Industries’ flow control system?
-%                                    & Technical analysis and literature study
-%                                    & Supplier datasheets, technical documentation, prior test data
-%                                    & Performance characteristics overview                                                                                             \\
-
-%         3. What flight-time improvement is theoretically achievable with hydrogen storage and fuel cells compared to the drone’s current battery system?
-%                                    & Analytical modelling and comparison
-%                                    & Energy density calculations, MATLAB/Excel models
-%                                    & Theoretical flight-time estimation                                                                                               \\
-
-%         4. Which system architecture best balances safety, efficiency, weight, system complexity, and manufacturability for the power generation and feed system?
-%                                    & Conceptual design and trade-off analysis
-%                                    & Morphological chart, decision matrix
-%                                    & Selected system architecture                                                                                                     \\
-
-%         5. Which components (fuel cell, intermediate electrical storage, power electronics, fluidics) are most suitable based on the system requirements and design constraints?
-%                                    & Component selection study
-%                                    & Supplier datasheets, selection criteria tables
-%                                    & Selected component list with justification                                                                                       \\
-
-%         6. What mechanical modifications are required to integrate the hydrogen storage, generator, fuel cell, and power electronics into the drone airframe without compromising payload capacity?
-%                                    & Mechanical design
-%                                    & CAD software, mass and tolerance analysis
-%                                    & Mechanical design drawings and mass breakdown                                                                                    \\
-
-%         7. What electrical architecture ensures stable power delivery from the fuel cell system to the drone’s propulsion and onboard electronics?
-%                                    & Electrical system design
-%                                    & Electrical schematics, simulation tools
-%                                    & Electrical architecture and schematics                                                                                           \\
-
-%         8. How does the integrated hydrogen-based power system perform during ground testing in terms of power output, stability, efficiency, and safety?
-%                                    & Experimental testing
-%                                    & Hydrogen supply, sensors, data acquisition system
-%                                    & Measured performance and test results                                                                                            \\
-
-%         9. What technical risks, failure modes, or limitations affect the overall feasibility of implementing the system in operational drone flights?
-%                                    & Risk analysis and evaluation
-%                                    & FMEA, test observations, design review
-%                                    & Feasibility assessment and risk overview                                                                                         \\
-%         \bottomrule
-%     \end{tabularx}
-%     \caption{Research Matrix}
-%     \label{tab:research_matrix}
-% \end{table}
-% \newpage
